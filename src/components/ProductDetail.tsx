@@ -89,43 +89,31 @@ const ProductDetail: React.FC = () => {
             </div>
           )}
 
-          <div className="product-meta">
-            <div className="meta-item">
-              <strong>Product ID:</strong> {product.id}
-            </div>
-            <div className="meta-item">
-              <strong>Price:</strong> {formatPrice(product.price)}
-            </div>
-          </div>
-
           <div className="product-actions">
             {/* AI Features - Primary Focus */}
             <div className="ai-features-section">
-              <h4>Explore with AI</h4>
+              <h4>Explore this Product with AI</h4>
               <div className="ai-buttons-grid">
                 <button
-                  className="btn btn-primary btn-large ai-feature-btn"
+                  className="btn btn-secondary btn-large ai-feature-btn"
                   onClick={() => setShowRemix(true)}
                 >
-                  <span className="btn-icon">🎨</span>
                   Try with AI
                   <span className="btn-subtitle">Mix with other products</span>
                 </button>
                 <button
-                  className="btn btn-primary btn-large ai-feature-btn"
+                  className="btn btn-secondary btn-large ai-feature-btn"
                   onClick={() => setShowFashion(true)}
                   title="Get personalized fashion advice using this product"
                 >
-                  <span className="btn-icon">👗</span>
                   Fashion AI
                   <span className="btn-subtitle">Style recommendations</span>
                 </button>
                 <button
-                  className="btn btn-primary btn-large ai-feature-btn"
+                  className="btn btn-secondary btn-large ai-feature-btn"
                   onClick={() => setShowDescribe(true)}
                   title="Generate AI description of this product"
                 >
-                  <span className="btn-icon">📝</span>
                   AI Describe
                   <span className="btn-subtitle">Detailed analysis</span>
                 </button>

@@ -1280,7 +1280,6 @@ img {
 }
 
 .smart-sell-text-container h4 {
-  margin-bottom: var(--space-4);
   color: var(--gray-800);
   font-family: var(--font-secondary);
 }
@@ -2053,7 +2052,6 @@ img {
 .ai-features-section h4 {
   margin: 0 0 var(--space-4) 0;
   color: var(--primary-700);
-  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
@@ -2061,7 +2059,7 @@ img {
 
 .ai-buttons-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-4);
 }
 
@@ -2201,14 +2199,12 @@ img {
 .btn-secondary {
   background: white;
   color: var(--gray-700);
-  border-color: var(--gray-200);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary:hover {
   background: var(--gray-50);
-  border-color: var(--primary-300);
-  color: var(--primary-700);
+  color: var(--primary-500);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -3208,12 +3204,6 @@ img {
     gap: var(--space-2);
   }
 
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-3);
-  }
-
   .section-header h4 {
     margin-right: 0;
     align-self: flex-start;
@@ -3959,14 +3949,6 @@ img {
   color: #666;
 }
 
-/* Recommendation */
-.smart-sell-recommendation {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
 .smart-sell-product-image {
   text-align: center;
 }
@@ -3993,7 +3975,6 @@ img {
 }
 
 .smart-sell-text-container h4 {
-  margin: 0 0 1rem 0;
   color: #28a745;
   font-size: 1.2rem;
 }

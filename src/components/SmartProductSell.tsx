@@ -239,16 +239,11 @@ const SmartProductSell: React.FC<SmartProductSellProps> = ({ onClose }) => {
             </div>
           ) : (
             <div className="smart-sell-results">
-              {/* Results Header */}
-              <div className="smart-sell-results-header">
-                <h3>Product Specially Recommended For You!</h3>
-                <p>Based on your photo and preferences, we found the perfect product:</p>
-              </div>
 
               {/* Product Found Section */}
               <div className="smart-sell-product-found">
                 <div className="product-found-header">
-                  <h4>🎯 Perfect Match Found!</h4>
+                  <h4>Perfect Match Found!</h4>
                   <p>We found the ideal product for you</p>
                 </div>
 
@@ -261,7 +256,6 @@ const SmartProductSell: React.FC<SmartProductSellProps> = ({ onClose }) => {
                       className="btn btn-primary view-product-btn"
                       onClick={onClose}
                     >
-                      <span className="btn-icon">👀</span>
                       View Product Details
                     </Link>
                   </div>
