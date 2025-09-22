@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header className="app-header">
         <div className="header-content">
           <Link to="/" className="logo">
-            <h1>Online Boutique</h1>
+            <h1>NeroFashion</h1>
           </Link>
 
           <SearchBar
