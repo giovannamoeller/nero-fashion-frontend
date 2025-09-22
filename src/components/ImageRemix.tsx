@@ -156,7 +156,7 @@ const ImageRemix: React.FC<ImageRemixProps> = ({ product, onClose }) => {
                 <div className="remix-plus">+</div>
 
                 <div className="image-section">
-                  <div className="product-image-container">
+                  <div className="remix-product-container">
                     <h4>Product Image</h4>
                     <div className="product-image-preview">
                       <img

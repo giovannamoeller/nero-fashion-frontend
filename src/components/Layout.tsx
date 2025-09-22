@@ -32,26 +32,28 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <SearchContext.Provider value={{ searchQuery, setSearchQuery }}>
       <div className="app-layout">
       <header className="app-header">
-        <div className="he aader-content">
-          <Link to="/" className="logo">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo">
             <h1>NeroFashion</h1>
           </Link>
 
-          <SearchBar
-            value={searchQuery}
-            onChange={setSearchQuery}
-          />
+          <div className="navbar-search">
+            <SearchBar
+              value={searchQuery}
+              onChange={setSearchQuery}
+            />
+          </div>
 
-          <div className="header-buttons">
+          <div className="navbar-actions">
             <button
-              className="smart-sell-button-header"
+              className="navbar-button"
               onClick={() => setShowSmartSell(true)}
               title="Find perfect products with AI"
             >
               Smart Find
             </button>
             <button
-              className="describe-button-header"
+              className="navbar-button"
               onClick={() => setShowDescribe(true)}
               title="Describe Image with AI"
             >
