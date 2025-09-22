@@ -32,7 +32,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <SearchContext.Provider value={{ searchQuery, setSearchQuery }}>
       <div className="app-layout">
       <header className="app-header">
-        <div className="header-content">
+        <div className="he aader-content">
           <Link to="/" className="logo">
             <h1>NeroFashion</h1>
           </Link>
