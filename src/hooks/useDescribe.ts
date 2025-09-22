@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { DescribeService, DescribeRequest, DescribeResponse, DescribeType } from '../services/describeService';
+import { DescribeService, DescribeRequest, DescribeResponse } from '../services/describeService';
 
 export interface DescribeState {
   isLoading: boolean;

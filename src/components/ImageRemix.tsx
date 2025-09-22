@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Product } from '../types/Product';
 import { useRemix } from '../hooks/useRemix';
-import { RemixService } from '../services/remixService';
 import ImageUpload from './ImageUpload';
 import LoadingSpinner from './LoadingSpinner';
 

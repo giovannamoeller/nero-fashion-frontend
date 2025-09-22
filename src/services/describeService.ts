@@ -85,7 +85,7 @@ export class DescribeService {
   }
 
   // Função auxiliar para gerar sugestões de alt text baseado na descrição
-  static generateAltText(description: string, type: DescribeType): string {
+  static generateAltText(description: string, _type: DescribeType): string {
     // Simplificar a descrição para um alt text mais conciso
     const sentences = description.split('.').filter(s => s.trim().length > 0);
     const firstSentence = sentences[0]?.trim() || description;
