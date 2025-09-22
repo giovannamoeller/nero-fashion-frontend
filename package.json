@@ -6,12 +6,11 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:frontend": "vite",
-    "dev:backend": "cd backend && npm run dev",
-    "build": "npm run build:frontend && npm run build:backend",
+    "build": "npm run build:frontend",
     "build:frontend": "tsc && vite build",
     "build:backend": "cd backend && npm run build",
     "preview": "vite preview",
-    "install:all": "npm install && cd backend && npm install"
+    "install:all": "npm install"
   },
   "dependencies": {
     "axios": "^1.6.0",
