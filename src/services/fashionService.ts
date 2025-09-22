@@ -26,6 +26,7 @@ export class FashionService {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
+      timeout: 120000, // 2 minutos timeout para AI processing (para conexões lentas)
     });
 
     return response.data;

@@ -40,7 +40,7 @@ export class RemixService {
           'Content-Type': 'multipart/form-data',
         },
         responseType: 'blob', // Importante: receber como blob para imagens
-        timeout: 60000, // 60 segundos timeout para AI processing
+        timeout: 180000, // 3 minutos timeout para AI processing (para conexões lentas)
         onUploadProgress: (progressEvent) => {
           if (progressEvent.total) {
             const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);

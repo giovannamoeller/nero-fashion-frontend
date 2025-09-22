@@ -42,7 +42,7 @@ export class DescribeService {
         params: {
           type_prompt: request.type_prompt || 'product'
         },
-        timeout: 30000, // 30 segundos timeout para AI processing
+        timeout: 120000, // 2 minutos timeout para AI processing (para conexões lentas)
         onUploadProgress: (progressEvent) => {
           if (progressEvent.total) {
             const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
