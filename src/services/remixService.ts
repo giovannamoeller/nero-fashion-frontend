@@ -1,6 +1,16 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://34.61.215.100:8080';
+// Detecta se está em produção (Vercel) ou desenvolvimento
+const getApiBaseUrl = () => {
+  // Se está em produção (Vercel), usa proxy relativo
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return '/api';
+  }
+  // Se está em desenvolvimento, usa a URL direta
+  return import.meta.env.VITE_API_BASE_URL || 'http://34.61.215.100:8080';
+};
+
+const API_BASE_URL = getApiBaseUrl();
 
 export interface RemixRequest {
   image1: File;  // Imagem do usuário
